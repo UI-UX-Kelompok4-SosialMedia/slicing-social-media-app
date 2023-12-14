@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beranda</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header class="w-100">
+      <nav class="navbar navbar-expand-lg navbar-custom p-0">
+        <div class="container-fluid nav-fluid">
+          <a class="navbar-brand desktop-logo" href="#"><img src="assets/logo.png" width="70" /></a>
+          <a class="navbar-brand mobile-logo" href="#"><img src="assets/logo-mobile.png" width="90" /></a>
+          <form class="d-flex" role="search">
+            <div class="search-field">
+              <i class="bx bx-search"></i>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            </div>
+          </form>
+          <ul class="nav justify-content-end">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/avatar.jpg" class="rounded-circle" width="50" /> </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profil.html">Profile</a></li>
+                <li class="notif"><a class="dropdown-item" href="notifications.html">Notification</a></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="row" id="main">
+      <aside class="col-lg-3 p-lg-5">
+        <div class="left card sidebar" id="sidebar">
+          <div class="card-body p-0">
+            <img src="assets/logo-mobile.png" width="145" class="m-3" alt="logo" />
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="beranda.html"><i class="bx bx-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="notifications.html"><i class="bx bx-bell"></i> Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="messages.html"><i class="bx bx-chat"></i> Messages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="settings.html"><i class="bx bx-cog"></i> Setting</a>
+              </li>
+            </ul>
+            <hr class="w-100" />
+          </div>
+        </div>
+      </aside>
+      <main class="col-lg-6">
+        <!-- Posts -->
+        <div class="web-post my-5">
+          <form action="#" class="post">
+            <div class="mb-3 bg-white rounded shadow-sm">
+              <textarea class="form-control post" id="post" rows="3"></textarea>
+              <div class="d-flex p-2 button-post justify-content-end gap-2">
+                <a href="#">
+                  <i class="bx bx-image-add"></i>
+                </a>
+                <a href="#">
+                  <i class="bx bx-send"></i>
+                </a>
+              </div>
+            </div>
+          </form>
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper" style="height: 300px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><i class="bx bx-plus" style="font-size: 80px; margin-top: 50%"></i></div>
+              <div class="swiper-slide"><img src="assets/reels-1.jpg" /></div>
+              <div class="swiper-slide"><img src="assets/reels-2.jpg" /></div>
+              <div class="swiper-slide"><img src="assets/reels-3.jpg" /></div>
+              <div class="swiper-slide"><img src="assets/reels-4.jpg" /></div>
+              <div class="swiper-slide"><img src="assets/reels-5.jpg" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <h1 class="title">Posts</h1>
+
+        <div class="card w-100 shadow-sm mb-3">
+          <div class="card-body">
+            <div class="row mb-2 justify-content-sm-between">
+              <div class="col-3 p-0 col-sm-2 col-md-1 p-md-0 ps-md-2">
+                <div class="img-container text-center">
+                  <img src="assets/avatar-2.jpg" class="img-fluid object-fit-cover" />
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-10 px-md-3 flex-sm-fill p-0">
+                <h5 class="card-title post-name mb-0">Jackson</h5>
+                <h6 class="card-subtitle post-date mb-2 text-body-secondary">Dec 02, 2020</h6>
+              </div>
+              <div class="col-2 col-sm-1 col-md-1 p-0 text-center">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bx bx-dots-horizontal-rounded"></i> </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Hapus</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+            <p class="card-text post-content">Occaecat ad non sit exercitation ipsum pariatur ullamco consectetur ad voluptate tempor non cillum. Dolore occaecat aliqua labore nulla adipisi</p>
+            <div class="row justify-content-sm-between">
+              <div class="col-2 col-sm-1 fs-3 post-button">
+                <i class="bx bx-like"></i>
+              </div>
+              <div class="col-1 p-0 px-sm-2 fs-3 post-button">
+                <i class="bx bx-comment"></i>
+              </div>
+              <div class="col-9 col-sm-10 flex-sm-fill fs-3 text-end post-button">
+                <i class="bx bx-bookmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-100 shadow-sm mb-3">
+          <div class="card-body">
+            <div class="row mb-2 justify-content-sm-between">
+              <div class="col-3 p-0 col-sm-2 col-md-1 p-md-0 ps-md-2">
+                <div class="img-container text-center">
+                  <img src="assets/avatar-3.jpg" class="img-fluid object-fit-cover" />
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-10 px-md-3 flex-sm-fill p-0">
+                <h5 class="card-title post-name mb-0">Brian Scott</h5>
+                <h6 class="card-subtitle post-date mb-2 text-body-secondary">Dec 02, 2020</h6>
+              </div>
+              <div class="col-2 col-sm-1 col-md-1 p-0 text-center">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bx bx-dots-horizontal-rounded"></i> </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Hapus</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+            <div class="img-post mb-3">
+              <img src="assets/post-1.jpg" alt="post-1" class="" />
+            </div>
+            <p class="card-text post-content">Occaecat ad non sit exercitation ipsum pariatur ullamco consectetur ad voluptate tempor non cillum. Dolore occaecat aliqua labore nulla adipisi</p>
+            <div class="row justify-content-sm-between">
+              <div class="col-2 col-sm-1 fs-3 post-button">
+                <i class="bx bx-like"></i>
+              </div>
+              <div class="col-1 p-0 px-sm-2 fs-3 post-button">
+                <i class="bx bx-comment"></i>
+              </div>
+              <div class="col-9 col-sm-10 flex-sm-fill fs-3 text-end post-button">
+                <i class="bx bx-bookmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="text-center my-5">Load More</h1>
+      </main>
+      <aside class="col-lg-3 p-lg-5">
+        <div class="right card sidebar" id="sidebar">
+          <div class="card-body">
+            <h1>Friends</h1>
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <div class="img-fluidimg-container text-center">
+                      <img src="assets/avatar-4.jpg" class="img-fluid object-fit-cover" alt="friends" />
+                    </div>
+                  </div>
+                  <div>Stefani Jhonson</div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <div class="img-fluidimg-container text-center">
+                      <img src="assets/avatar-5.jpg" class="img-fluid object-fit-cover" alt="friends" />
+                    </div>
+                  </div>
+                  <div>Elizabeth Bailey</div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <div class="img-fluidimg-container text-center">
+                      <img src="assets/avatar-6.jpg" class="img-fluid object-fit-cover" alt="friends" />
+                    </div>
+                  </div>
+                  <div>Michael Taylor</div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <div class="img-fluidimg-container text-center">
+                      <img src="assets/avatar-7.jpg" class="img-fluid object-fit-cover" alt="friends" />
+                    </div>
+                  </div>
+                  <div>Matthew Jackson</div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <div class="img-fluidimg-container text-center">
+                      <img src="assets/avatar-8.jpg" class="img-fluid object-fit-cover" alt="friends" />
+                    </div>
+                  </div>
+                  <div>John Wilson</div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex align-items-center gap-2">
+                  <div>
+                    <div class="img-fluidimg-container text-center">
+                      <img src="assets/avatar-9.jpg" class="img-fluid object-fit-cover" alt="friends" />
+                    </div>
+                  </div>
+                  <div>Lauren Smith</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Menu -->
+    <div class="mobile-menu">
+      <div class="d-flex justify-content-center align-items-center container-menu gap-2">
+        <a href="beranda.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-home"></i>
+          </div>
+        </a>
+        <a href="messages.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-chat"></i>
+          </div>
+        </a>
+        <a href="post-mobile.html" class="text-decoration-none">
+          <div class="menu-icon" style="width: 55px; height: 55px">
+            <i class="bx bx-plus"></i>
+          </div>
+        </a>
+        <a href="friends-mobile.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-user"></i>
+          </div>
+        </a>
+        <a href="settings.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-cog"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

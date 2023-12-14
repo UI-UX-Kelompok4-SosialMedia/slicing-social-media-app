@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Settings</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header class="w-100">
+      <nav class="navbar navbar-expand-lg navbar-custom p-0">
+        <div class="container-fluid nav-fluid">
+          <a class="navbar-brand desktop-logo" href="#"><img src="assets/logo.png" width="70" /></a>
+          <a class="navbar-brand mobile-logo" href="#"><img src="assets/logo-mobile.png" width="90" /></a>
+          <form class="d-flex" role="search">
+            <div class="search-field">
+              <i class="bx bx-search"></i>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            </div>
+          </form>
+          <ul class="nav justify-content-end">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/avatar.jpg" class="rounded-circle" width="50" /> </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profil.html">Profile</a></li>
+                <li class="notif"><a class="dropdown-item" href="notifications.html">Notification</a></li>
+                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="row" id="main">
+      <aside class="col-lg-3 p-lg-5">
+        <div class="left card sidebar" id="sidebar">
+          <div class="card-body p-0">
+            <img src="assets/logo-mobile.png" width="145" class="m-3" alt="logo" />
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="beranda.html"><i class="bx bx-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="notifications.html"><i class="bx bx-bell"></i> Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="messages.html"><i class="bx bx-chat"></i> Messages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="settings.html"><i class="bx bx-cog"></i> Setting</a>
+              </li>
+            </ul>
+            <hr class="w-100" />
+          </div>
+        </div>
+      </aside>
+      <main class="col-lg-6 my-lg-5">
+        <h1 class="title">Settings</h1>
+        <div class="card py-2 mb-3">
+          <div class="card-body setting">
+            <h1>Informasi Profile</h1>
+            <div class="d-flex justify-content-between">
+              <p>Nama, Lokasi, Dan Industri</p>
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Informasi demografi pribadi</p>
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Verifikasi</p>
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card py-2 mb-3">
+          <div class="card-body setting dark-mode">
+            <div class="d-flex justify-content-between align-items-center">
+              <h1>Tampilan</h1>
+              <select class="form-select setting-select" aria-label="Default select example">
+                <option value="1">Mode Terang</option>
+                <option value="2">Mode Gelap</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="card py-2 mb-3">
+          <div class="card-body setting">
+            <h1>Preferensi Umum</h1>
+            <div class="d-flex justify-content-between">
+              <p>Bahasa</p>
+              <select class="form-select setting-select" aria-label="Default select example">
+                <option value="1">Bahasa Indonesia</option>
+                <option value="2">English</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Bahasa Konten</p>
+              <select class="form-select setting-select" aria-label="Default select example">
+                <option value="1">Bahasa Indonesia</option>
+                <option value="2">English</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Putar Otomatis Video</p>
+              <a href="#">
+                Aktif
+                <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Menampilkan Foto Profile</p>
+              <a href="#">
+                Semua Orang
+                <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card py-2 mb-3">
+          <div class="card-body setting">
+            <h1>Manajemen Akun</h1>
+            <div class="d-flex justify-content-between">
+              <p>Penutupan Akun Sementara</p>
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Hapus Akun</p>
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between justify-content-lg-end gap-md-3">
+          <button type="button" class="btn btn-secondary">Keluar</button>
+          <button type="button" class="btn btn-light">Simpan</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- Menu -->
+    <div class="mobile-menu">
+      <div class="d-flex justify-content-center align-items-center container-menu gap-2">
+        <a href="beranda.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-home"></i>
+          </div>
+        </a>
+        <a href="messages.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-chat"></i>
+          </div>
+        </a>
+        <a href="post-mobile.html" class="text-decoration-none">
+          <div class="menu-icon" style="width: 55px; height: 55px">
+            <i class="bx bx-plus"></i>
+          </div>
+        </a>
+        <a href="friends-mobile.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-user"></i>
+          </div>
+        </a>
+        <a href="settings.html" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-cog"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
